@@ -1,7 +1,11 @@
-h1, h2, nav {
+h1, nav {
     text-align: center;
 }
 
 p {
+    text-align: center;
+}
+
+.about {
     text-align: center;
 }
