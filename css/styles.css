@@ -81,4 +81,46 @@ p {
     font-weight: 900;
     font-style: italic;
   }
-  
+  /* styles.css */
+header {
+  background-color: #0073e6; /* Blue with good contrast */
+  color: #ffffff; /* White text for high contrast */
+  padding: 20px;
+  text-align: center;
+}
+
+header h1, header h2 {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+}
+
+nav.Menu a {
+  color: #ffffff; /* White text for high contrast */
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: 500;
+}
+
+nav.Menu a:hover {
+  color: #ffcc00; /* Yellow for hover effect */
+}
+
+search input[type="search"] {
+  padding: 5px;
+  border: 1px solid #ffffff; /* White border for contrast */
+  border-radius: 5px;
+}
+
+search button {
+  background-color: #ffcc00; /* Yellow button */
+  color: #000000; /* Black text for high contrast */
+  border: none;
+  padding: 5px 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+search button:hover {
+  background-color: #e6b800; /* Slightly darker yellow for hover */
+}
+
