@@ -126,4 +126,28 @@ search button {
 search button:hover {
   background-color: #e6b800; /* Slightly darker yellow for hover */
 }
+/* styles.css */
+footer {
+  background-color: #333333; /* Dark grey background */
+  color: #ffffff; /* White text for high contrast */
+  padding: 20px;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
 
+footer a {
+  color: #ffcc00; /* Yellow links for high contrast */
+  text-decoration: none;
+}
+
+footer a:hover {
+  color: #e6b800; /* Slightly darker yellow for hover */
+}
+
+footer address {
+  margin: 10px 0;
+}
+
+footer p {
+  margin: 10px 0;
+}
