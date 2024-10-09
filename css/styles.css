@@ -125,6 +125,7 @@ nav.Menu a {
 .Menu a:hover {
   background-color: #ddd;
   color: #ff4d4d; 
+}
 nav.Menu a:hover {
   color: #ffcc00; /* Yellow for hover effect */
 }
@@ -147,6 +148,7 @@ search button {
 a {
   color: #007bff; /* Bright Blue */
   text-decoration: none;
+}
 search button:hover {
   background-color: #e6b800; /* Slightly darker yellow for hover */
 }
