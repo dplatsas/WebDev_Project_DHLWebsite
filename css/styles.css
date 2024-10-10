@@ -23,6 +23,7 @@ body {
 .Menu {
   background-color: #2d9f67;
   overflow: hidden;
+  text-align: center;
 }
 
 /* Style the links inside the navigation bar */
