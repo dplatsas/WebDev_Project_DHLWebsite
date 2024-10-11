@@ -5,6 +5,7 @@ h1, p, .about {
     text-align: center;
 }
 h1 {
+  text-align: center;
   padding: 10px 20px;
 }
 
