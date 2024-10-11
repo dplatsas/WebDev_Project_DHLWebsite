@@ -4,6 +4,9 @@
 h1, p, .about {
     text-align: center;
 }
+h1 {
+  padding: 10px 20px;
+}
 
 body {
     font-family: 'Roboto', sans-serif; /* Using Roboto font */
