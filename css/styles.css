@@ -159,12 +159,20 @@ search button:hover {
   position: absolute;
   bottom: 20px;
   right: 20px;
-  background-color: black;
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  color: white;
   padding-left: 20px;
   padding-right: 20px;
 }
+
+div.CarOfTheWeek > .text-block {
+  position: absolute;
+  bottom: -180px;
+  right: 260px;
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
 
 .CarOfTheWeek, .Collection {
   display: inline-block;
