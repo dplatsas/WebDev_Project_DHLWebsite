@@ -127,9 +127,11 @@ nav.Menu a {
 .Menu a:hover {
   background-color: #ddd;
   color: #ff4d4d; 
+  text-align: center;
 }
 nav.Menu a:hover {
   color: #ffcc00; /* Yellow for hover effect */
+  text-align: center;
 }
 
 search input[type="search"] {
