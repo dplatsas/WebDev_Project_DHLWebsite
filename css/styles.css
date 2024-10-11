@@ -166,7 +166,7 @@ search button:hover {
 
 div.CarOfTheWeek > .text-block {
   position: absolute;
-  bottom: -180px;
+  bottom: 20px;
   right: 260px;
   background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
   padding-left: 20px;
