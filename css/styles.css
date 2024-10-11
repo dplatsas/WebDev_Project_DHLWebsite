@@ -22,7 +22,7 @@ body {
 .Menu {
     text-align: center; /* Center the navigation items */
     background-color: #000000; /* Black background for the menu */
-    padding: 10px; /* Optional: Add padding */
+    /*padding: 10px; /* Optional: Add padding */
 }
 
 .Menu a {
