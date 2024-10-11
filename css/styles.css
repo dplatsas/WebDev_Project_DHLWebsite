@@ -22,6 +22,8 @@ body {
 .Menu {
     text-align: center; /* Center the navigation items */
     background-color: #000000; /* Black background for the menu */
+    display: inline-block; /* Makes the nav bar only as wide as its content */
+    margin: 0 auto; /* Center the nav bar horizontally */
     /*padding: 10px; /* Optional: Add padding */
 }
 
