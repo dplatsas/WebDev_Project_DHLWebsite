@@ -1,15 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+
+h1, p, .about {
+    text-align: center;
+}
 h1 {
-    text-align: center;
-}
-
-p {
-    text-align: center;
-}
-
-.about {
-    text-align: center;
+  padding: 10px 20px;
 }
 
 body {
@@ -151,6 +147,29 @@ search button:hover {
     background-color: #e6b800; /* Slightly darker yellow for hover */
 }
 
+/* Container holding the image and the text */
+.CarOfTheWeek, .Collection {
+  position: relative;
+  text-align: center;
+}
+
+/* Bottom right text */
+.text-block {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  background-color: black;
+  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+  color: white;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.CarOfTheWeek, .Collection {
+  display: inline-block;
+}
+
+
 /* Footer styling */
 footer {
     background-color: #333333; /* Dark grey background */
@@ -166,7 +185,8 @@ footer a {
 }
 
 footer a:hover {
-    color: #e6b800; /* Slightly darker yellow for hover */
+  color: #e6b800; /* Slightly darker yellow for hover */
+  text-decoration: underline;
 }
 
 footer address {
