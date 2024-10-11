@@ -199,8 +199,11 @@ footer p {
 }
 
 .CarOfTheWeek {
-  text-align: center; /* Center the text within the div */
-  margin: 20px auto; /* Optional: Add some margin around the section */
+    display: flex;             /* Use flexbox for alignment */
+    flex-direction: column;    /* Arrange items vertically */
+    align-items: center;       /* Center items horizontally */
+    text-align: center;        /* Center text inside the div */
+    margin: 20px auto;        /* Optional: Add some margin around the section */
 }
 
 .CarOfTheWeek img {
