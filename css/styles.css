@@ -1,41 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
-
-h1, p, .about {
-    text-align: center;
-}
-h1 {
-  text-align: center;
-  padding: 10px 20px;
-}
-
-body {
-    font-family: 'Roboto', sans-serif; /* Using Roboto font */
-    background-color: #1c1c1c;
-    color: #ffffff;
-}
-
-/* New Menu Styling */
-.Menu {
-    text-align: center; /* Center the navigation items */
-    background-color: #000000; /* Black background for the menu */
-    display: inline-block; /* Makes the nav bar only as wide as its content */
-    margin: 0 auto; /* Center the nav bar horizontally */
-    /*padding: 10px; /* Optional: Add padding */
-}
-
-.Menu a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 10px 20px; /* Add space around the links */
-    display: inline-block; /* Make links respect padding and stay inline */
-}
-
-.Menu a:hover {
-    background-color: #ddd;
-    color: #ffcc00; /* Yellow hover effect */
-}
-
 /* Roboto font weight classes */
 .roboto-thin {
     font-family: "Roboto", sans-serif;
@@ -109,77 +73,194 @@ body {
     font-style: italic;
 }
 
-/* Header styling */
-header {
-    background-color: #0073e6; /* Blue with good contrast */
-    color: #ffffff; /* White text for high contrast */
-    padding: 20px;
+.about, .contact {
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+}
+
+h2 {
     text-align: center;
 }
 
-header h1, header h2 {
+p {
+    text-align: justify;
+}
+
+body {
+    font-family: 'Roboto', sans-serif; /* Using Roboto font */
+    background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+/* Header styling */
+.header_container {
+    background-color: #0073e6;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 2px solid #ffcc00;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+/* Logo Styling */
+.logo h1 {
     margin: 0;
+    font-size: 24px;
+}
+
+.logo h2 {
+    margin: 0;
+    font-size: 16px;
+}
+
+
+.logo {
     font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+/* Menu Styling */
+.nav_container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.nav_list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    border-radius: 12px;
+    border: 2px solid #ffcc00;
+}
+
+nav.Menu ul li {
+    margin-right: 0px;
+}
+
+nav.Menu a {
+    text-decoration: none;
+    background-color: #0073e6;
+    color: #ffffff;
+    padding: 10px 20px;
+    display: inline-block;
+    border-radius: 10px;
+}
+
+nav.Menu a:hover {
+    background-color: #ffcc00;
+    color: #0033FF;
+    font-weight: bold;
 }
 
 /* Search input styling */
-search input[type="search"] {
+.search-container {
+    padding: 10px;
+}
+
+.search-container input[type="search"] {
     padding: 5px;
-    border: 1px solid #ffffff; /* White border for contrast */
+    border: 1px solid #ffffff;
     border-radius: 5px;
 }
 
-search button {
-    background-color: #ffcc00; /* Yellow button */
-    color: #000000; /* Black text for high contrast */
+.search-container button {
+    background-color: #ffcc00;
+    color: #000000;
     border: none;
-    padding: 5px 10px;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 10px;
+    padding: 5px 10px;
 }
 
-a {
-    color: #007bff; /* Bright Blue */
-    text-decoration: none;
+.search-container button:hover {
+    background-color: #e6b800;
 }
 
-search button:hover {
-    background-color: #e6b800; /* Slightly darker yellow for hover */
+/* img style */
+.CarOfTheWeek, .Collection {
+    display: inline-block;
+    max-width: 100%;
+}
+.CarOfTheWeek img {
+    display: block;
+}
+
+.CarOfTheWeek {
+    display: flex;             /* Use flexbox for alignment */
+    flex-direction: column;    /* Arrange items vertically */
+    align-items: center;       /* Center items horizontally */
+    text-align: center;        /* Center text inside the div */
+    margin: 20px auto;         /* Add some margin around the section */
+    position: relative;
 }
 
 /* Container holding the image and the text */
- .Collection {
-  position: relative;
-  text-align: center;
+.Collection {
+    position: relative;
+    text-align: center;
+    padding: 10px;
 }
-
+  
 /* Bottom right text */
 .text-block {
-  position: absolute;
-  bottom: 20px;
-  right: 20px;
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  padding-left: 20px;
-  padding-right: 20px;
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
+    padding: 10px 20px;
+    border-radius: 8px;
 }
 
-div.CarOfTheWeek > .text-block {
-  position: absolute;
-  bottom: 20px;
-  right: 260px;
-  background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-  padding-left: 20px;
-  padding-right: 20px;
+/* contact form style */
+* {
+    box-sizing: border-box;
+}
+.row {
+    padding: 12px;
 }
 
-
-
-
-.CarOfTheWeek, .Collection {
-  display: inline-block;
+label {
+    float: left;
+    width: 20%;
+    margin-top: 6px;
 }
 
+input[type=text],input[type=email], textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    float: left;
+    width: 80%;
+    margin-top: 6px;
+}
+
+.submit button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+    margin-right: 10px;
+}
+.submit button:hover {
+    background-color: #45a049;
+}
+/* Clear floats after the columns */
+.row::after {
+    content: "";
+    display: table;
+    clear: both;
+}
 
 /* Footer styling */
 footer {
@@ -207,19 +288,4 @@ footer address {
 footer p {
     margin: 10px 0;
 }
-
-.CarOfTheWeek {
-    display: flex;             /* Use flexbox for alignment */
-    flex-direction: column;    /* Arrange items vertically */
-    align-items: center;       /* Center items horizontally */
-    text-align: center;        /* Center text inside the div */
-    margin: 20px auto;        /* Optional: Add some margin around the section */
-    position: relative; 
-}
-
-.CarOfTheWeek img {
-  max-width: 100%; /* Ensure the image is responsive */
-  height: auto; /* Maintain aspect ratio */
-}
-
 

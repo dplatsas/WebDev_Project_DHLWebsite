@@ -10,24 +10,28 @@
     <title>Wheels On Fire</title>
 </head>
 <body>
-    
-    <header>
-        <h1>Wheels On Fire</h1>
-        <h2>John O'Reilly</h2>
-        <nav class="Menu">
-            <a href="/index.html">Home</a>
-            <a href="/pages/about.html">About</a>
-            <a href="/pages/contact.html">Contact</a>
-        </nav>
-        <search>
-            <form action="./search/">
-              <input type="search" id="car" name="car"/>
-              <button type="submit">Search</button>
-            </form>
-          </search>
+    <header class="header_container">
+        <div class="logo">
+            <h1>Wheels On Fire</h1>
+            <h2>John O'Reilly</h2>
+        </div>
+        <div class="nav_container">
+            <nav class="Menu">
+                <ul class="nav_list">
+                    <li><a href="/index.html">Home</a></li>
+                    <li><a href="/pages/about.html">About</a></li>
+                    <li><a href="/pages/contact.html">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="search-container">
+                <form action="./search/">
+                    <input type="search" id="car" name="car"/>
+                    <button type="submit">Search</button>
+                </form>
+            </div>
+        </div>
     </header>
     <hr>
-
     <div class="about">
         <h2>About Me</h2>
         <p>From a young age, cars have always been more than just a mode of transportation to me—they're a passion,
