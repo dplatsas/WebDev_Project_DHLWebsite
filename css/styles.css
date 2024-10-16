@@ -242,6 +242,11 @@ input[type=text],input[type=email], textarea {
     margin-top: 6px;
 }
 
+textarea {
+    height: 100px;
+    min-height: 39.5px;
+}
+
 .submit button {
     background-color: #04AA6D;
     color: white;
