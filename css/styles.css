@@ -197,7 +197,7 @@ nav.Menu a:hover {
     flex-direction: column;    /* Arrange items vertically */
     align-items: center;       /* Center items horizontally */
     text-align: center;        /* Center text inside the div */
-    margin: 20px auto;         /* Add some margin around the section */
+    margin: 20px;         /* Add some margin around the section */
     position: relative;
 }
 
