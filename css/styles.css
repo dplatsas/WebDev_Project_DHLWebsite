@@ -323,4 +323,105 @@ footer p {
     margin-right: auto;
     width: 50%;
 }
+/* Event Section Styling */
+.event {
+    background-color: #1e1e1e; /* Dark grey background to contrast with black */
+    color: #f5f5f5; /* Light text for readability on dark background */
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 700px;
+    transition: transform 0.2s ease-in-out;
+}
+
+.event:hover {
+    transform: scale(1.02);
+}
+
+/* Header Styling for Event Titles */
+.event header h2 {
+    font-size: 1.8em;
+    color: #ffffff; /* Bright white for emphasis */
+    margin-bottom: 10px;
+}
+
+.event header time {
+    font-size: 1em;
+    color: #cccccc; /* Slightly muted color for time */
+    display: block;
+    margin-bottom: 15px;
+}
+
+/* Image Styling */
+.event figure img {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #444; /* Border to separate from background */
+}
+
+.event figure figcaption {
+    font-size: 0.9em;
+    color: #b3b3b3; /* Subtle color for caption */
+    text-align: center;
+    margin-top: 5px;
+}
+
+/* Address Styling */
+.event address {
+    font-style: normal;
+    color: #f5f5f5;
+    font-size: 1em;
+    margin-top: 15px;
+}
+
+.event address a {
+    color: #4da6ff; /* Light blue for contrast */
+    text-decoration: none;
+}
+
+.event address a:hover {
+    text-decoration: underline;
+}
+
+/* Details Section Styling */
+.event details {
+    margin-top: 15px;
+    font-size: 1em;
+    color: #e0e0e0;
+}
+
+.event details summary {
+    font-weight: bold;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.event details ul {
+    margin-top: 10px;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+.event details ul li {
+    margin: 5px 0;
+}
+
+/* Call to Action Button */
+.event .btn-register {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #4da6ff;
+    color: #1e1e1e;
+    font-size: 1em;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+}
+
+.event .btn-register:hover {
+    background-color: #3399ff;
+}
 
