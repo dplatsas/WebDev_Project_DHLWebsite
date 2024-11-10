@@ -1,94 +1,56 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&display=swap');
 
-@media only screen and (max-width: 600px) {
-    
-}
-@media only screen and (min-width: 600px) {
-    
-}
-@media only screen and (min-width: 768px) {
-    
-}
-@media only screen and (min-width: 992px) {
-    
-}
-
-/* Roboto font weight classes */
-.roboto-thin {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: normal;
-}
-
-.roboto-light {
-    font-family: "Roboto", sans-serif;
+/*body font style*/
+.merriweather-light {
+    font-family: "Merriweather", serif;
     font-weight: 300;
     font-style: normal;
 }
 
-.roboto-regular {
-    font-family: "Roboto", sans-serif;
+.merriweather-regular {
+    font-family: "Merriweather", serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.roboto-medium {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-}
-
-.roboto-bold {
-    font-family: "Roboto", sans-serif;
+.merriweather-bold {
+    font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: normal;
 }
 
-.roboto-black {
-    font-family: "Roboto", sans-serif;
+.merriweather-black {
+    font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: normal;
 }
 
-.roboto-thin-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 100;
-    font-style: italic;
-}
-
-.roboto-light-italic {
-    font-family: "Roboto", sans-serif;
+.merriweather-light-italic {
+    font-family: "Merriweather", serif;
     font-weight: 300;
     font-style: italic;
 }
 
-.roboto-regular-italic {
-    font-family: "Roboto", sans-serif;
+.merriweather-regular-italic {
+    font-family: "Merriweather", serif;
     font-weight: 400;
     font-style: italic;
 }
 
-.roboto-medium-italic {
-    font-family: "Roboto", sans-serif;
-    font-weight: 500;
-    font-style: italic;
-}
-
-.roboto-bold-italic {
-    font-family: "Roboto", sans-serif;
+.merriweather-bold-italic {
+    font-family: "Merriweather", serif;
     font-weight: 700;
     font-style: italic;
 }
 
-.roboto-black-italic {
-    font-family: "Roboto", sans-serif;
+.merriweather-black-italic {
+    font-family: "Merriweather", serif;
     font-weight: 900;
     font-style: italic;
-}
+}  
 
 .about, .contact {
     margin: auto;
-    width: 50%;
     padding: 10px;
 }
 
@@ -103,14 +65,25 @@ p {
 }
 
 body {
-    font-family: 'Roboto', sans-serif; /* Using Roboto font */
+    font-family: "Merriweather", serif;
     background-color: #1c1c1c;
+    color: #ffffff;
+}
+
+.light-mode {
+    background-color: #ffffff;
+    color: #1c1c1c;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
     color: #ffffff;
 }
 
 /* Header styling */
 .header_container {
-    background-color: #0073e6;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -119,120 +92,117 @@ body {
     position: sticky;
     top: 0;
     z-index: 1000;
+    border-radius: 8px;
+    background-image: url(/media/fire.jpeg);
+    background-size: cover;
+    background-position: center;
+    height: 90px;
 }
 
 /* Logo Styling */
-.logo h1 {
-    margin: 0;
-    font-size: 24px;
-}
-
-.logo h2 {
-    margin: 0;
-    font-size: 16px;
-}
-
-
-.logo {
-    font-family: 'Roboto', sans-serif;
-    text-align: center;
-    padding: 10px;
+#logo {
+    height: 100px;
 }
 
 /* Menu Styling */
-.nav_container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px;
-}
-
-.nav_list {
+.menu {
     list-style: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     display: flex;
     border-radius: 13px;
     border: 2px solid #ffcc00;
+    background-color: #ed3b00e8;
 }
 
-nav.Menu ul li {
-    margin-right: 0px;
+.navbar {
+    display: flex;
+    align-items: center;
 }
 
-nav.Menu a {
+.navbar a {
     text-decoration: none;
-    background-color: #0073e6;
     color: #ffffff;
     padding: 10px 20px;
     display: inline-block;
     border-radius: 10px;
 }
 
-nav.Menu a:hover {
+.navbar a:hover {
     background-color: #ffcc00;
-    color: #0033FF;
+    color: #ed3b00e8;
     font-weight: bold;
 }
 
-/* Search input styling */
-.search-container {
-    padding: 10px;
-}
-
-.search-container input[type="search"] {
-    padding: 5px;
-    border: 1px solid #ffffff;
-    border-radius: 5px;
-}
-
-.search-container button {
-    background-color: #ffcc00;
-    color: #000000;
+/* Hide the menu toggle button on large screens */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    background: none;
     border: none;
-    border-radius: 5px;
+    color: white;
     cursor: pointer;
-    padding: 5px 10px;
 }
 
-.search-container button:hover {
-    background-color: #e6b800;
-}
-
-/* img style */
-.CarOfTheWeek, .Collection {
-    display: inline-block;
-    max-width: 100%;
-}
-.CarOfTheWeek img {
-    display: block;
+.collection {
+    gap: 30px; /* Space between images */
 }
 
 .CarOfTheWeek {
-    display: flex;             /* Use flexbox for alignment */
-    flex-direction: column;    /* Arrange items vertically */
-    align-items: center;       /* Center items horizontally */
-    text-align: center;        /* Center text inside the div */
-    margin: 20px;         /* Add some margin around the section */
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+
 }
 
-/* Container holding the image and the text */
-.Collection {
-    position: relative;
-    text-align: center;
-    padding: 10px;
+.collection {
+    display: grid;
+    align-items: center;
+}
+
+.collection img {
+    height: 250px;
+    object-fit: contain;
 }
   
-/* Bottom right text */
-.text-block {
-    position: absolute;
-    bottom: 20px;
-    right: 20px;
-    background: rgba(0, 0, 0, 0.5); /* Black background with 0.5 opacity */
-    padding: 10px 20px;
+figure {
+    position: relative;
+    margin: 0;
+    border: 3px solid white;
     border-radius: 8px;
+    overflow: hidden; /* Ensures figcaption stays within the border */
+    box-shadow: 0 4px 8px 0 rgb(244, 72, 28), 0 6px 20px 0 rgba(45, 97, 228);
+    object-fit: contain;
+    margin-bottom: 30px;
+    transition: transform 0.2s ease;
 }
+  
+figure img {
+    width: 100%; /* Image takes up the full width of its container, which is 80% of the viewport */
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+figure:hover {
+    transform: scale(1.04)
+}
+  
+/* Style the caption */
+figcaption {
+    /*position: absolute;*/
+    top: auto;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 16px;
+    text-align: center;
+}  
 
 /* contact form style */
 * {
@@ -264,9 +234,12 @@ textarea {
     min-height: 39.5px;
 }
 
+.submit {
+    height: 40px;
+}
+
 .submit button {
     background-color: #33b249;
-    color: rgb(0, 0, 0);
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -297,6 +270,7 @@ footer {
     padding: 20px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
+    width: 100vw;
 }
 
 footer a {
@@ -323,6 +297,7 @@ footer p {
     margin-right: auto;
     width: 50%;
 }
+
 /* Event Section Styling */
 .event {
     background-color: #1e1e1e; /* Dark grey background to contrast with black */
@@ -425,3 +400,66 @@ footer p {
     background-color: #3399ff;
 }
 
+/* mobile screen */
+@media only screen and (max-width: 700px) {
+    /* Show the toggle button and hide the nav links by default */
+    .menu-toggle {
+        display: block;
+    }
+    
+    .navbar .menu {
+        display: none; /* Hide nav links initially */
+        flex-direction: column;
+        gap: 10px;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        padding: 10px;
+        border-radius: 8px;
+        max-height: 0; /* Start with zero height */
+        overflow: hidden; /* Hide contents initially */
+        transition: max-height 0.3s ease;
+    }
+  
+    /* Show nav links when the menu is active */
+    .navbar.active .menu {
+        max-height: 300px;
+        display: flex;
+    }
+
+    .about, .contact {
+        width: 100%;
+    }
+
+    label {
+        font-size: 80%;
+    }
+
+    footer {
+        font-size: 80%;
+    }
+}
+
+/* tablet screen */
+@media (min-width: 600px) and (max-width: 1024px) {
+    .collection {
+        grid-template-columns: repeat(2, 1fr); /* 2 images per row */
+    }
+    .about, .contact {
+        width: 80%;
+    }
+
+    footer {
+        font-size: 90%;
+    }
+}
+
+/* desktop screen */
+@media (min-width: 1025px) and (max-width: 1440px) {
+    .collection {
+        grid-template-columns: repeat(3, 1fr); /* 3 images per row */
+    }
+    .about, .contact {
+        width: 50%;
+    }
+}

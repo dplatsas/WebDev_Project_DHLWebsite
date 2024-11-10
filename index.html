@@ -2,7 +2,8 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="pages/javascript.js">
+    <script src="pages/script.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="description" content="Web_Dev Project">
     <meta name="author" content="Lok Ching Tam">
@@ -12,16 +13,18 @@
 <body>
     <header class="header_container">
         <div class="logo">
-            <h1>Wheels On Fire</h1>
-            <h2>John O'Reilly</h2>
+            <a href="/index.html"><img id="logo" src="/media/logo.png" alt="logo"></a>
         </div>
-        <div class="nav_container">
-            <nav class="Menu">
-                <ul class="nav_list">
-                    <li><a href="index.html">Home</a></li>
+        <div style="display: flex;">
+            <button id="theme-toggle" onclick="toggleLightMode()"><i class="material-icons">brightness_medium</i></button>
+            <nav class="navbar">
+                <!-- Hamburger Icon -->
+                <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button> 
+                <ul class="menu">
+                    <li><a href="/index.html">Home</a></li>
                     <li><a href="pages/about.html">About</a></li>
+                    <li><a href="pages/events.html">Events</a></li>
                     <li><a href="pages/contact.html">Contact</a></li>
-                    <li><a href="events.html">Upcoming Events</a></li>
                 </ul>
             </nav>
         </div>
@@ -30,37 +33,52 @@
     <main>
         <div class="CarOfTheWeek">
             <h1>Car of the Week</h1>
-            <div class="CarOfTheWeek">
-                <img src="media/Car of the Week.jpg" alt="CarOfTheWeek" width="948">
-                <div class="text-block">
+            <figure>
+                <img src="media/Car of the Week.png" loading="lazy" alt="CarOfTheWeek">
+                <figcaption>
                     <h2>Orange Mercedes Benz G63</h2>
-                    <p>Photo by: Pixabay from Pexels</p>
-                </div>
-            </div>
+                    <!-- <p>Photo by: Pixabay from Pexels</p> -->
+                </figcaption>
+            </figure>
         </div>
         <hr>
-        <div class="Collection">
-            <h1>Collection:</h1>
-            <div class="Collection">
-                <img src="media/Collection_1.jpg" alt="Rolls Royce Phantom" width="948">
-                <div class="text-block">
-                    <h2>Rolls Royce Phantom</h2>
-                    <p>Photo by: Abdul Rahman from Pexels</p>
-                </div>
+        <h1>Collections:</h1>
+        <div class="collection">
+            <div class="car">
+                <figure>
+                    <img src="media/Collection_1.png" loading="lazy" alt="Rolls Royce Phantom">
+                    <figcaption>
+                        <h2>Rolls Royce Phantom <Title></Title></h2>
+                        <!-- <p>Photo by: Abdul Rahman from Pexels</p> -->
+                    </figcaption>
+                </figure>
             </div>
-            <div class="Collection">
-                <img src="media/Collection_2.jpg" alt="Blue 1963 Chevrolet Impala" width="948">
-                <div class="text-block">
-                    <h2>Blue 1963 Chevrolet Impala</h2>
-                    <p>Photo by: Pixabay from Pexels</p>
-                </div>
+            <div class="car">
+                <figure>
+                    <img src="media/Collection_2.png" loading="lazy" alt="Blue 1963 Chevrolet Impala">
+                    <figcaption>
+                        <h2>Blue 1963 Chevrolet Impala</h2>
+                        <!-- <p>Photo by: Pixabay from Pexels</p> -->
+                    </figcaption>
+                </figure>
             </div>
-            <div class="Collection">
-                <img src="media/Collection_3.jpg" alt="Yellow McLaren 570S" width="948">
-                <div class="text-block">
-                    <h2>Yellow McLaren 570S</h2>
-                    <p>Photo by: ernie114 from Pixabay</p>
-                </div>
+            <div class="car">
+                <figure>
+                    <img src="media/Collection_3.png" loading="lazy" alt="Yellow McLaren 570S">
+                    <figcaption>
+                        <h2>Yellow McLaren 570S</h2>
+                        <!-- <p>Photo by: ernie114 from Pixabay</p> -->
+                    </figcaption>
+                </figure>
+            </div>
+            <div class="car">
+                <figure>
+                    <img src="media/Collection_4.png" loading="lazy" alt="Black Mercedes Benz AMG">
+                    <figcaption>
+                        <h2>Black Mercedes Benz AMG</h2>
+                        <!-- <p>Photo by: ernie114 from Pixabay</p> -->
+                    </figcaption>
+                </figure>
             </div>
         </div>
     </main>

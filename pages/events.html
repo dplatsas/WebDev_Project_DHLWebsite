@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <link rel="stylesheet" href="../css/styles.css">
-    <link rel="stylesheet" href="javascript.js">
+    <script src="script.js" defer></script>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <meta charset="UTF-8">
     <meta name="description" content="Web_Dev Project">
     <meta name="author" content="All Members">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Wheels On Fire</title>
 </head>
-
 <body>
     <header class="header_container">
         <div class="logo">
-            <h1>Wheels On Fire</h1>
-            <h2>John O'Reilly</h2>
+            <a href="/index.html"><img id="logo" src="/media/logo.png" alt="logo"></a>
         </div>
-        <div class="nav_container">
-            <nav class="Menu">
-                <ul class="nav_list">
+        <div style="display: flex;">
+            <button id="theme-toggle" onclick="toggleLightMode()"><i class="material-icons">brightness_medium</i></button>
+            <nav class="navbar">
+                <!-- Hamburger Icon -->
+                <button class="menu-toggle" aria-label="Toggle menu">&#9776;</button> 
+                <ul class="menu">
                     <li><a href="../index.html">Home</a></li>
                     <li><a href="about.html">About</a></li>
+                    <li><a href="events.html">Events</a></li>
                     <li><a href="contact.html">Contact</a></li>
-                    <li><a href="events.html">Upcoming Events</a></li>
                 </ul>
             </nav>
         </div>
@@ -44,7 +45,9 @@
             </figure>
             
             <address>
+                <i class="material-icons">location_on</i>
                 Mondello Park, Caragh, Co.Kildare<br>
+                <i class="material-icons">phone</i>
                 <a href="tel:+1234567890">Contact: 087-123-4567</a>
             </address>
             
@@ -72,7 +75,9 @@
             </figure>
             
             <address>
+                <i class="material-icons">location_on</i>
                 Mondello Park, Caragh, Co.Kildare<br>
+                <i class="material-icons">phone</i>
                 <a href="tel:+1234567890">Contact: 087-123-4567</a>
             </address>
             
