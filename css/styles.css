@@ -93,7 +93,7 @@ body {
     top: 0;
     z-index: 1000;
     border-radius: 8px;
-    background-image: url(/media/fire.jpeg);
+    background-image: url(media/fire.jpeg);
     background-size: cover;
     background-position: center;
     height: 90px;
