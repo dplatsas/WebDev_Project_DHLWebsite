@@ -35,17 +35,16 @@
             <h1>Contact Me</h1>
             <form class="enquiry">
                 <div class="row">
-                    <label for="name">First Name:</label>
-                    <input type="text" id="name" name="FirstName" placeholder="Please enter your first name" required>
+                    <label for="firstName">First Name:</label>
+                    <input type="text" id="firstName" name="firstName" placeholder="Please enter your first name" required>
                 </div>
                 <div class="row">
-                    <label for="name">Last Name:</label>
-                    <input type="text" id="name" name="LastName" placeholder="Please enter your last name" required>
+                    <label for="lastName">Last Name:</label>
+                    <input type="text" id="lastName" name="lastName" placeholder="Please enter your last name" required>
                 </div>
-
                 <div class="row">
                     <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Please enter your email" required>
+                    <input type="email" id="email" name="email" placeholder="Please enter your email" autocomplete="on" required>
                 </div>
                 <div class="row">
                     <label for="reasons">Reasons for Inquiry:</label>
@@ -62,24 +61,25 @@
                 </div>
                 <div class="submit">
                     <!-- Submit button  -->
-                    <button type="button">Submit</button>
+                    <input type="submit" id="submit" value="Submit">
                 </div>
             </form>
         </section>
     </main>
-        <p class="socialMedia">Instagram Tiktok X</p>
-        <p class="socialMedia">@Wheelsonfireinsta|@Wheelsonfiretiktok|@WheelsonfireX</p>
-
+        <p style="font-size:12px; padding:5px; margin:0%;">Social Media:</p>
+        <ul class="socialMedia">
+            <li><a href="@Wheelsonfireinsta">Instagram</a></li>
+            <li><a href="@Wheelsonfiretiktok">Tiktok</a></li>
+            <li><a href="@WheelsonfireX">X</a></li>
+        </ul>
     <hr>
-
     <footer>
         <address>
             Contact the author of this page:<br>
             Email: <a href="mailto:DHLWebsite@example.com">DHLWebsite@example.com</a><br>
-            Phone: <a href="tel:+353">+353 (00) 000 0000</a>
+            Phone: <a href="tel:+353 (00) 000 000">+353 (00) 000 0000</a>
         </address>
         <p>Copyright: 2024 by DHL Website. All Rights Reserved.</p>
     </footer>
 </body>
-
 </html>

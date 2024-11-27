@@ -234,12 +234,8 @@ textarea {
     min-height: 39.5px;
 }
 
-.submit {
-    height: 40px;
-}
-
-.submit button {
-    background-color: #33b249;
+input[type=submit] {
+    background-color: #3de258;
     padding: 12px 20px;
     border: none;
     border-radius: 4px;
@@ -247,10 +243,12 @@ textarea {
     float: right;
     margin-right: 10px;
 }
-.submit button:hover {
-    background-color: #33b249;
+
+input[type=submit]:hover {
+    background-color: #36c54e;
     color: #ffffff;
 }
+
 /* Clear floats after the columns */
 .row::after {
     content: "";
@@ -259,8 +257,23 @@ textarea {
 }
 
 .socialMedia {
+    list-style-type: none;
     font-size: 0.67em;
     font-weight: bold;
+    display: flex;
+    padding: 0px;
+    a {
+        padding: 5px;
+    }
+}
+
+.socialMedia_light-mode {
+    a {
+        color: #0202ff;
+    }
+    a:hover {
+        color: #2800eed4;
+    }
 }
 
 /* Footer styling */
@@ -268,19 +281,32 @@ footer {
     background-color: #333333; /* Dark grey background */
     color: #ffffff; /* White text for high contrast */
     padding: 20px;
+    padding-bottom: 10px;
     text-align: center;
     font-family: 'Roboto', sans-serif;
     width: 100vw;
+    border-radius: 8px;
 }
 
-footer a {
+a {
     color: #ffcc00; /* Yellow links for high contrast */
     text-decoration: none;
 }
 
-footer a:hover {
+a:hover {
   color: #e6b800; /* Slightly darker yellow for hover */
   text-decoration: underline;
+}
+
+.footer_light-mode {
+    background-color: #9c9c9c92;
+    color: #333333;
+    a {
+        color: #0202ff;
+    }
+    a:hover {
+        color: #2800eed4;
+    }
 }
 
 footer address {
