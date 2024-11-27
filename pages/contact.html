@@ -35,13 +35,25 @@
             <h1>Contact Me</h1>
             <form class="enquiry">
                 <div class="row">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" placeholder="Please enter your name" required>
+                    <label for="name">First Name:</label>
+                    <input type="text" id="name" name="FirstName" placeholder="Please enter your first name" required>
+                </div>
+                <div class="row">
+                    <label for="name">Last Name:</label>
+                    <input type="text" id="name" name="LastName" placeholder="Please enter your last name" required>
                 </div>
 
                 <div class="row">
                     <label for="email">Email:</label>
                     <input type="email" id="email" name="email" placeholder="Please enter your email" required>
+                </div>
+                <div class="row">
+                    <label for="reasons">Reasons for Inquiry:</label>
+                    <select id="reasons" name="reasons" required>
+                        <option value="general">General</option>
+                        <option value="feedback">Feedback</option>
+                        <option value="technicalSupport">Technical Support</option>
+                    </select>
                 </div>
                 <!-- I have made it that it is compulsory to fill all boxes -->
                 <div class="row">
