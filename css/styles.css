@@ -113,6 +113,7 @@ body {
     border-radius: 13px;
     border: 2px solid #ffcc00;
     background-color: #ed3b00e8;
+    width: 374px;
 }
 
 .navbar {
@@ -273,7 +274,7 @@ input[type=submit]:hover {
     }
 }
 
-.socialMedia {
+.socialMedia ul{
     list-style-type: none;
     font-size: 0.67em;
     font-weight: bold;
