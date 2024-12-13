@@ -40,19 +40,27 @@ window.addEventListener('load', () => {
 
 
 
-//submission-message
-window.onload = function() {
-  let form = document.querySelector('.enquiry');
-  
-  if (form) {
-    form.onsubmit = function(event) {
-    event.preventDefault(); // prevent the page to be refreshed
-    console.log('Submit Clicked!');
+//validation + submission message
+function emailIsValid(email) {
+  return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+}
 
+const form = document.querySelector('form');
+
+form.addEventListener('submit', function(event) {
+  event.preventDefault(); // Prevent form submission
+
+  const email = document.getElementById('email').value;
+
+  // check if success
+  if (emailIsValid(email)) {
+    console.log("successfully submitted");
+
+    // display message
     const submitButton = document.querySelector('.submit');
     submitButton.classList.add('showMessage');
 
-    //show for 3 seconds, then reset the form
+    //show message for 3 seconds, then reset the form
     let countdown = 3;
     const interval = setInterval(() => {
       console.log(`Message will disappear in ${countdown} seconds`);
@@ -65,6 +73,9 @@ window.onload = function() {
         console.log('Message hidden and form reset.');
       }
     }, 1000);
-    };
+
+  }  else {
+      alert('Please enter a valid email address.');
+      return;
   }
-};
+});
